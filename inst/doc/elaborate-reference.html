@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta name="author" content="Rob Goedman, Gabor Grothendieck, Søren Højsgaard, Ayal Pinkus and Mikkel Meyer Andersen" />
 
-<meta name="date" content="2019-10-07" />
+<meta name="date" content="2020-09-29" />
 
 <title>Elaborate reference of Ryacas functionality</title>
 
@@ -118,9 +117,6 @@ padding-right: 2em;
 font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 1.35;
-}
-#header {
-text-align: center;
 }
 #TOC {
 clear: both;
@@ -289,7 +285,8 @@ code > span.st { color: #d14; }
 code > span.co { color: #888888; font-style: italic; } 
 code > span.ot { color: #007020; } 
 code > span.al { color: #ff0000; font-weight: bold; } 
-code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
 </style>
 
 
@@ -304,7 +301,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">Elaborate reference of <code>Ryacas</code> functionality</h1>
 <h4 class="author">Rob Goedman, Gabor Grothendieck, Søren Højsgaard, Ayal Pinkus and Mikkel Meyer Andersen</h4>
-<h4 class="date">2019-10-07</h4>
+<h4 class="date">2020-09-29</h4>
 
 
 
@@ -775,15 +772,11 @@ organised differently.
 </div>
 <div id="integration" class="section level2">
 <h2>Integration</h2>
-<p>@ &lt;&lt;echo=F,results=hide&gt;&gt;= yacas(“Clear(a,b,A,B)”)</p>
-<pre><code>
-
-
-```r
-#yacas(&quot;Integrate(x,a,b)Sin(x)&quot;)
-#yacas(&quot;Integrate(x,a,b)Ln(x)+x&quot;)
-#yacas(&quot;Integrate(x)1/(x^2-1)&quot;)
-yacas(&quot;Integrate(x)Sin(a*x)^2*Cos(b*x)&quot;)</code></pre>
+<p>@ &lt;&lt;echo=F,results=hide&gt;&gt;= yacas(“Clear(a,b,A,B)”) ```</p>
+<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb267-1" title="1"><span class="co">#yacas(&quot;Integrate(x,a,b)Sin(x)&quot;)</span></a>
+<a class="sourceLine" id="cb267-2" title="2"><span class="co">#yacas(&quot;Integrate(x,a,b)Ln(x)+x&quot;)</span></a>
+<a class="sourceLine" id="cb267-3" title="3"><span class="co">#yacas(&quot;Integrate(x)1/(x^2-1)&quot;)</span></a>
+<a class="sourceLine" id="cb267-4" title="4"><span class="kw">yacas</span>(<span class="st">&quot;Integrate(x)Sin(a*x)^2*Cos(b*x)&quot;</span>)</a></code></pre></div>
 <pre><code>## yacas_expression((2 * sin(b * x)/b - (sin(-2 * (x * a) - b * x)/(-2 * a - b) + sin(-2 * (x * a) + b * x)/(-2 * a + b)))/4)</code></pre>
 <div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb269-1" title="1"><span class="co">#Integrate(sin(x),x,a,b)</span></a>
 <a class="sourceLine" id="cb269-2" title="2"><span class="co">#Integrate(log(x),x,a,b)</span></a>

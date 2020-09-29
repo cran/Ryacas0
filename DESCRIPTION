@@ -1,5 +1,5 @@
 Package: Ryacas0
-Version: 0.4.2
+Version: 0.4.3
 Title: Legacy 'Ryacas' (Interface to 'Yacas' Computer Algebra System)
 Authors@R: c(
     person(given = "Mikkel Meyer", family = "Andersen",
@@ -26,12 +26,12 @@ LinkingTo: Rcpp
 Suggests: devtools, exams, knitr, Matrix, pkgload, rmarkdown, igraph,
         testthat
 License: GPL-2
-URL: https://github.com/mikldk/ryacas0, http://www.yacas.org
-BugReports: https://github.com/mikldk/ryacas0/issues
-RoxygenNote: 6.1.1.9000
+URL: https://github.com/r-cas/ryacas0, http://www.yacas.org
+BugReports: https://github.com/r-cas/ryacas0/issues
+RoxygenNote: 7.1.0
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2019-10-07 20:06:49 UTC; mikl
+Packaged: 2020-09-29 18:23:46 UTC; mikl
 Author: Mikkel Meyer Andersen [aut, cre, cph],
   Rob Goedman [aut, cph],
   Gabor Grothendieck [aut, cph],
@@ -41,4 +41,4 @@ Author: Mikkel Meyer Andersen [aut, cre, cph],
   Nemanja Trifunovic [cph] (UTF-8 part of yacas
     (src/yacas/include/yacas/utf8*))
 Repository: CRAN
-Date/Publication: 2019-10-09 13:40:02 UTC
+Date/Publication: 2020-09-29 18:50:03 UTC
